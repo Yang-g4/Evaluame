@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREAR RÚBRICA</title>
+    <link rel="icon" href="../images/logo_small.png" type="image/png">
+    <link rel="stylesheet" href="../styles/crear_rubrica.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-arriba">
+            <img src="../images/logo_full.png" alt="EvaluaMe Logo" class="logo">
+            <div class="contenedor-usuario">
+                <img src="../images/people.png" alt="Icono de Usuario" id="iconoUsuario" class="icono-usuario">
+                
+                <div id="menuUsuario" class="menu-desplegable oculto">
+                    <p id="nombreUsuarioMenu">Cargando...</p>
+                    <hr>
+                    <button id="btnCerrarSesion" class="btn-logout">Cerrar Sesión</button>
+                </div>
+            </div>
+        </div>
+        <nav class="barra-verde-navegacion">
+            <a href="./home.html">Inicio</a>
+        </nav>
+    </header>
+
+    <main class="contenido-principal">
+        <div class="info-principal">
+            <h2 class="titulo-seccion">Creando Nueva Rúbrica</h2>
+            
+            <form id="form-evaluacion" class="formulario-evaluacion" action="#" method="post">
+                
+                <div class="grupo-campo largo">
+                    <label for="nombre-evento">Nombre del Evento / Proyecto:</label>
+                    <input type="text" id="nombre-evento" name="nombre_evento" placeholder="Ej. Expo Vinos 2026" required>
+                </div>
+
+                <div class="grupo-campo largo">
+                    <label for="descripcion">Descripción:</label>
+                    <textarea id="descripcion" name="descripcion" rows="4" placeholder="Escribe una breve descripción del evento o evaluación..."></textarea>
+                </div>
+
+                <div class="fila-campos">
+                    <div class="grupo-campo">
+                        <label for="carrera">Carrera:</label>
+                        <input type="text" id="carrera" name="carrera" placeholder="Ej. ING En Biotecnología">
+                    </div>
+
+                    <div class="grupo-campo">
+                        <label for="grupos">Equipos/Grupos:</label>
+                        <input type="text" id="grupos" name="grupos" placeholder="Ej. 3A, 3B, 5A">
+                    </div>
+                </div>
+
+                <div class="fila-campos">
+                    <div class="grupo-campo">
+                        <label for="fecha-inicio">Fecha de Inicio:</label>
+                        <input type="date" id="fecha-inicio" name="fecha_inicio" required>
+                    </div>
+
+                    <div class="grupo-campo">
+                        <label for="fecha-fin">Fecha de Término:</label>
+                        <input type="date" id="fecha-fin" name="fecha_fin" required>
+                    </div>
+                </div>
+
+                <div class="contenedor-parametros">
+                    <h3>Agregar Parámetros</h3>
+
+                    <div class="input-grupo">
+                        <input type="text" id="input-parametro" placeholder="Ej. Puntualidad, Claridad..." />
+                        <button id="btn-agregar" type="button">Agregar</button>
+                    </div>
+
+                    <div class="caja-lista">
+                        <p class="texto-vacio" id="mensaje-vacio">Aún no has agregado parámetros.</p>
+                        <ul id="lista-parametros" class="lista-parametros"></ul>
+                    </div>
+                </div>
+
+                <div class="acciones-formulario">
+                    <button type="submit" class="btn-guardar">Guardar Rúbrica</button>
+                </div>
+
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contenido-footer">
+            <div class="telefono">
+                <p><span class="titulo-footer">CONTACTO:</span>+52 871 568 1291</p>
+            </div>
+            <div class="acerca_de">
+                <p><span class="titulo-footer">ACERCA DE NOSOTROS:</span>Proyecto integrador 3A ING. En Tecnologías De La Información E Innovación Digital</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="../js/crear_rubrica.js"></script>
+    <script type="module" src="../js/navbar.js"></script>
+</body>
+
+</html>

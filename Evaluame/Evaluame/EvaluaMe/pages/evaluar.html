@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVALUAR PROYECTO</title>
+    <link rel="icon" href="../images/logo_small.png" type="image/png">
+    <link rel="stylesheet" href="../styles/evaluar.css">
+</head>
+<body>
+    <header>
+        <div class="header-arriba">
+            <img src="../images/logo_full.png" alt="EvaluaMe Logo" class="logo">
+            <div class="contenedor-usuario">
+                <img src="../images/people.png" alt="Icono de Usuario" id="iconoUsuario" class="icono-usuario">
+                
+                <div id="menuUsuario" class="menu-desplegable oculto">
+                    <p id="nombreUsuarioMenu">Cargando...</p>
+                    <hr>
+                    <button id="btnCerrarSesion" class="btn-logout">Cerrar Sesión</button>
+                </div>
+            </div>
+        </div>
+        <nav class="barra-verde-navegacion">
+            <a href="./home.html">Inicio</a>
+        </nav>
+    </header>
+    <main class="contenido-principal">
+        <div class="info-principal">
+            <div id="detalles-proyecto" class="encabezado-evaluacion">
+                <h2 id="titulo-evento">Cargando proyecto...</h2>
+                <p id="subtitulo-carrera" class="carrera-subtitulo"></p>
+                <p id="descripcion-evento" class="descripcion-evaluacion"></p>
+            </div>
+            <form id="form-calificar" class="formulario-evaluacion">
+                <div class="grupo-campo">
+                    <label for="nombre-equipo">Nombre del Equipo o Alumno a evaluar:</label>
+                    <input type="text" id="nombre-equipo" placeholder="Ej. Equipo 3 - Sistema Web" required>
+                </div>
+                <hr class="separador">
+                <h3>Criterios / Parámetros a Evaluar</h3>
+                <div id="contenedor-parametros-evaluar" class="lista-evaluacion">
+                    <p class="cargando">Cargando parámetros de la rúbrica...</p>
+                </div>
+                <hr class="separador">
+                <div class="grupo-campo">
+                    <label for="observaciones-generales">Observaciones / Comentarios Generales:</label>
+                    <textarea 
+                        id="observaciones-generales" 
+                        rows="4" 
+                        placeholder="Escribe aquí retroalimentación, puntos fuertes o áreas de mejora para el equipo..."
+                    ></textarea>
+                </div>
+                <div class="acciones-formulario">
+                    <button type="submit" class="btn-guardar">Guardar Evaluación</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="contenido-footer">
+            <div class="telefono">
+                <p><span class="titulo-footer">CONTACTO:</span>+52 871 568 1291</p>
+            </div>
+            <div class="acerca_de">
+                <p><span class="titulo-footer">ACERCA DE NOSOTROS:</span>Proyecto integrador 3A ING. En Tecnologías De La Información E Innovación Digital</p>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="../js/evaluar.js"></script>
+    <script type="module" src="../js/navbar.js"></script>
+</body>
+</html>

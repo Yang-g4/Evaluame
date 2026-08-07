@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="icon" href="../images/logo_small.png" type="image/png">
+    <link rel="stylesheet" href="../styles/home.css">
+</head>
+<body>
+    <header>
+        <div class="header-arriba">
+            <img src="../images/logo_full.png" alt="EvaluaMe Logo" class="logo">
+            <div class="contenedor-usuario">
+                <img src="../images/people.png" alt="Icono de Usuario" id="iconoUsuario" class="icono-usuario">
+                <div id="menuUsuario" class="menu-desplegable oculto">
+                    <p id="nombreUsuarioMenu">Cargando...</p>
+                    <hr>
+                    <button id="btnCerrarSesion" class="btn-logout">Cerrar Sesión</button>
+                </div>
+            </div>
+        </div>
+        <nav class="barra-verde-navegacion">
+            <a href="./home.html">Inicio</a>
+        </nav>
+    </header>
+    <main class="contenido-principal">
+        <div class="info-principal">
+            <h2 class="titulo-seccion">Proyectos Existentes</h2>
+            <a href="./crear_rubrica.html" class="btn-nueva-evaluacion">Crear Evaluación</a>
+        </div>
+        <div class="contenedor-proyectos">
+
+        </div>
+    </main>
+    <footer>
+        <div class="contenido-footer">
+            <div class="telefono">
+                <p><span class="titulo-footer">CONTACTO:</span>+52 871 568 1291</p>
+            </div>
+            <div class="acerca_de">
+                <p><span class="titulo-footer">ACERCA DE NOSOTROS:</span>Proyecto integrador 3A ING. En Tecnologías De La Información E Innovación Digital</p>
+            </div>
+        </div>
+    </footer>
+<script type="module" src="../js/home.js"></script>
+<script type="module" src="../js/navbar.js"></script>
+</body>
+</html>

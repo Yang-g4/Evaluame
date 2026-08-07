@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALIFICACIONES Y RESULTADOS</title>
+    <link rel="icon" href="../images/logo_small.png" type="image/png">
+    <link rel="stylesheet" href="../styles/calificaciones.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-arriba">
+            <img src="../images/logo_full.png" alt="EvaluaMe Logo" class="logo">
+            <div class="contenedor-usuario">
+                <img src="../images/people.png" alt="Icono de Usuario" id="iconoUsuario" class="icono-usuario">
+                
+                <div id="menuUsuario" class="menu-desplegable oculto">
+                    <p id="nombreUsuarioMenu">Cargando...</p>
+                    <hr>
+                    <button id="btnCerrarSesion" class="btn-logout">Cerrar Sesión</button>
+                </div>
+            </div>
+        </div>
+        <nav class="barra-verde-navegacion">
+            <a href="./home.html">Inicio</a>
+        </nav>
+    </header>
+
+    <main class="contenido-principal">
+        <div class="info-principal">
+            
+            <div class="encabezado-resultados">
+                <h2 id="titulo-proyecto">Cargando proyecto...</h2>
+                <p id="total-evaluaciones" class="contador-evaluaciones">Cargando resultados...</p>
+            </div>
+
+            <div id="contenedor-calificaciones" class="lista-calificaciones">
+                <p class="cargando">Cargando datos de evaluaciones...</p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="contenido-footer">
+            <div class="telefono">
+                <p><span class="titulo-footer">CONTACTO:</span>+52 871 568 1291</p>
+            </div>
+            <div class="acerca_de">
+                <p><span class="titulo-footer">ACERCA DE NOSOTROS:</span>Proyecto integrador 3A ING. En Tecnologías De La Información E Innovación Digital</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="../js/calificaciones.js"></script>
+    <script type="module" src="../js/navbar.js"></script>
+</body>
+
+</html>
